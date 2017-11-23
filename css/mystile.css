@@ -1,0 +1,96 @@
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 60px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 22.7%;
+}
+
+.topnav a:hover {
+  background-color: #6699ff;
+  color: white;
+}
+
+.topnav a.active {
+    background-color: #6699ff;
+    color: white;
+}
+
+.container {
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+.container a {
+    float: left;
+    font-size: 17px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 60px;
+    text-decoration: none;
+	}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 60px;
+    background-color: inherit;
+	
+    }
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: 6699ff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: f2f2f2;
+    padding: 20px 60px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	}
+
+.dropdown-content a:hover {
+    background-color: #6699ff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #6699ff;
+   color: white;
+   text-align: center;
+}

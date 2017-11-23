@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="css/mystile.css">
+<title>Panaderia pandora</title>
+<meta charset="UTF-8">
+  <meta name="description" content="Probando bordes">
+  <meta name="keywords" content="HTML, CSS, bordes">
+  <meta name="author" content="root" >
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body bgcolor="#E2D0A8">
+<h1 align="center"><strong><a href="Inicio.html"><img src="imagenes/Logopanaderia.jpg" width="265" height="161" /></a></strong></h1>
+
+<div align="center">
+
+<span id="liveclock"></span><script language="JavaScript" type="text/javascript">
+ <!--
+
+function show5(){
+if (!document.layers&&!document.all&&!document.getElementById)
+return
+
+ var Digital=new Date()
+ var hours=Digital.getHours()
+ var minutes=Digital.getMinutes()
+ var seconds=Digital.getSeconds()
+
+var dn="AM"
+if (hours<24)
+dn="PM"
+if (hours>24)
+hours=hours-24
+if (hours==0)
+hours=24
+
+ if (minutes<=9)
+ minutes="0"+minutes
+ if (seconds<=9)
+ seconds="0"+seconds
+//change font size here to your desire
+myclock="<font size='5' face='Arial' ><b><font size='1'>Hora actual:</font></br>"+hours+":"+minutes+":"
+ +seconds+" "+dn+"</b></font>"
+if (document.layers){
+document.layers.liveclock.document.write(myclock)
+document.layers.liveclock.document.close()
+}
+else if (document.all)
+liveclock.innerHTML=myclock
+else if (document.getElementById)
+document.getElementById("liveclock").innerHTML=myclock
+setTimeout("show5()",1000)
+ }
+
+
+window.onload=show5
+ //-->
+ </script>
+
+</div>
+<br />
+<div class="topnav">
+  <a href="index.html">Inicio</a>
+  
+      <div class="dropdown">
+    <button class="dropbtn">Tipos de Panes</button>
+    <div class="dropdown-content">
+      <a class="active" href="enoferta.html">OFERTA</a>
+     <a href="panesvariados.html">Panes variados</a>
+      <a href="casero.html">Panes Caseros</a>
+    </div>
+  </div> 
+    <a href="Conocenos.html">Conocenos</a>
+    <a href="Contactanos.html">Contactanos</a>
+    <a href="Clientes.php">Clientes</a>
+    <a href="Registro.php">Registro</a>
+      </div>
+
+<H1 align="center"><font color="#FF0000">Oferta 24H!</font></H1>
+<table border="1">
+
+<table width="50%" border="2" align="center" cellspacing="0" bordercolor="#000000" bgcolor="#E2D0A8">
+  <tr>
+    <td width="23%"><h2 align="center">Pan s/sal rustico</h2>
+    <p align="center"><img src="imagenes/pan sin sal rustico 1 25.jpg" width="174" height="95" /></p>
+    
+    <h1 align="center"><strong><font color="#FF0000">1,15€</font></strong></h1>
+    
+    <p align="center"><a href="Contactanos.html#Consultas"><img src="imagenes/carro.jpg" width="109" height="47" /></a></p></td>
+    
+    <td width="14%"><h2 align="center">2 Pan baguette </h2>
+    
+<p align="center"><img src="imagenes/2 pan baguette 1.jpg" width="174" height="95" /></p>
+
+    <h1 align="center"><strong><font color="#FF0000">1€</font></strong></h1>
+    
+    <p align="center"><a href="Contactanos.html#Consultas"><img src="imagenes/carro.jpg" width="109" height="47" /></a></p></td>
+    <td width="15%"><h2 align="center">Pan omega</h2>
+    
+<p align="center"><img src="imagenes/Pan redondo omega095.jpg" width="174" height="95" /></p>
+
+    <h1 align="center"><strong><font color="#FF0000">1,20€</font></strong></h1>
+    
+    <p align="center"><a href="Contactanos.html#Consultas"><img src="imagenes/carro.jpg" width="109" height="47" /></a></p></td>
+     <td width="15%"><h2 align="center">Pan Chapata</h2>
+     
+<p align="center"><img src="imagenes/pan chapata 1 15.jpg" width="174" height="95" /></p>
+
+    <h1 align="center"><strong><font color="#FF0000">0,70€</font></strong></h1>
+    <p align="center"><a href="Contactanos.html#Consultas"><img src="imagenes/carro.jpg" width="109" height="47" /></a></p></td>
+     </tr>
+</table>
+<br />
+
+<div class="footer">
+No se admiten devoluciones y precios sin I.V.A.
+Telefono de contacto: 943 65 32 13
+Correo electronico: panaderiapandora@gmail.com
+</div>
+</body>
+</html>

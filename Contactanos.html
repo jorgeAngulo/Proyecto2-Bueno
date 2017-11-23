@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="css/mystile.css">
+<title>Panaderia pandora</title>
+
+<meta charset="UTF-8">
+  <meta name="description" content="Probando bordes">
+  <meta name="keywords" content="HTML, CSS, bordes">
+  <meta name="author" content="root" >
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body bgcolor="#E2D0A8">
+<h1 align="center"><strong><a href="Inicio.html"><img src="imagenes/Logopanaderia.jpg" width="265" height="161" /></a></strong></h1>
+
+<div align="center">
+
+<span id="liveclock"></span><script language="JavaScript" type="text/javascript">
+ <!--
+
+function show5(){
+if (!document.layers&&!document.all&&!document.getElementById)
+return
+
+ var Digital=new Date()
+ var hours=Digital.getHours()
+ var minutes=Digital.getMinutes()
+ var seconds=Digital.getSeconds()
+
+var dn="AM"
+if (hours<24)
+dn="PM"
+if (hours>24)
+hours=hours-24
+if (hours==0)
+hours=24
+
+ if (minutes<=9)
+ minutes="0"+minutes
+ if (seconds<=9)
+ seconds="0"+seconds
+//change font size here to your desire
+myclock="<font size='5' face='Arial' ><b><font size='1'>Hora actual:</font></br>"+hours+":"+minutes+":"
+ +seconds+" "+dn+"</b></font>"
+if (document.layers){
+document.layers.liveclock.document.write(myclock)
+document.layers.liveclock.document.close()
+}
+else if (document.all)
+liveclock.innerHTML=myclock
+else if (document.getElementById)
+document.getElementById("liveclock").innerHTML=myclock
+setTimeout("show5()",1000)
+ }
+
+
+window.onload=show5
+ //-->
+ </script>
+
+</div>
+<br />
+<div class="topnav">
+  <a href="index.html">Inicio</a>
+  
+      <div class="dropdown">
+    <button class="dropbtn">Tipos de Panes</button>
+    <div class="dropdown-content">
+      <a href="enoferta.html">OFERTA</a>
+      <a href="panesvariados.html">Panes variados</a>
+      <a href="casero.html">Panes Caseros</a>
+    </div>
+  </div> 
+    <a href="Conocenos.html">Conocenos</a>
+    <a class="active" href="Contactanos.html">Contactanos</a>
+    <a href="Clientes.php">Clientes</a>
+    <a href="Registro.php">Registro</a>
+      </div>
+<br />
+<table width="1312" border="0">
+  <tr>
+    <th width="261" align="left" bgcolor="#aea9a6"><p>Pincha sobre la sección que quieres:</p>
+      <p><br/>
+      </p>
+      <li><a href="#Consultas">Compras</a></li>
+      <br/><br/>
+      <li><a href="#Trabaja">Trabaja con nosotros</a></li>
+      <br/>
+    </ul></th>
+    <tr>
+    <th width="261" align="left" ><font color="#FF0000">Video de como hacemos el pan:</font><br/>
+     <iframe width="300" height="215" src="https://www.youtube.com/embed/Qz551QovGJU"  allowfullscreen></iframe></th>
+    <td bgcolor="#aea9a6"><p><strong><a name="Consultas" id="Consultas"></a>Compras</strong></p>
+      <form id="form2" name="form2" method="post" action="">
+        <p>
+          <label for="Tipo de consulta">Tipo de consulta:</label>
+          <select name="Tipo de consulta" id="Tipo de consulta">
+            <option selected="selected">Cómo comprar</option>
+            <option>Pedidos</option>
+            <option>Facturación y pagos</option>
+            <option>Artículos</option>
+            <option>Otros</option>
+          </select>
+        </p>
+        <p>Detalle de la consulta:        </p>
+        <p>
+          <label for="Detalle de la consulta"></label>
+          <textarea name="Detalle de la consulta" id="Detalle de la consulta" cols="45" rows="5"></textarea>
+        </p>
+        <label for="Direccion">Dirección:</label>
+          <input type="text" name="Direccion" id="Direccion" maxlength="30"/>
+        </p>
+        <p>
+          <label for="Poblacion">Población: </label>
+          <input type="text" name="Poblacion" id="Poblacion" maxlength="15"/>
+        </p>
+        <p>
+          <label for="Codigo postal">Código postal: </label>
+          <input type="text" name="Codigo postal" id="Codigo postal" maxlength="5"/>
+        </p>
+        <p>
+          <label for="Provincia">Provincia: </label>
+          <input type="text" name="Provincia" id="Provincia" maxlength="20"/>
+        <p>Forma de contacto:</p>
+        <p>
+          <label>
+            <input type="radio" name="Forma de contacto" value="opción" id="Formadecontacto_0" />
+          Correo Electrónico</label>
+          <br />
+          <label>
+            <input type="radio" name="Forma de contacto" value="opción" id="Formadecontacto_1" />
+            Móvil</label>
+          <br />
+          <label>
+            <input type="radio" name="Forma de contacto" value="opción" id="Formadecontacto_2" />
+            Fijo</label>
+        </p>
+        <p> 
+          <label for="Forma de contacto"></label>
+          <input type="text" name="Forma de contacto" size="30" value="Escriba el correo, móvil o fijo" id="Forma de contacto" />
+        </p>
+        <p>
+          <input type="submit" value="Enviar consulta"/>
+          <input type="reset" value="Borrar consulta"/>
+        </p>
+      </form></td>
+  </tr>
+  </tr>
+ 
+  <tr>
+    <th width="261" align="left" >&nbsp;</th>
+    <td bgcolor="#C6A5A1"><p><strong><a name="Trabaja" id="Trabaja"></a>Trabaja con nosotros</strong></p>
+      <form action="" method="post" enctype="multipart/form-data" name="form3" id="form3">
+      <fieldset>
+        <legend><strong>Datos personales</strong></legend>
+        <p>
+          <label for="Nombre3">Nombre</label>
+          <input type="text" name="Nombre2" id="Nombre2" maxlength="20"/>
+        </p>
+        <p>
+          <label for="1er apellido2">1º apellido: </label>
+          <input type="text" name="1er apellido2" id="1er apellido2" maxlength="20"/>
+          <label for="2º apellido2">2º apellido:</label>
+          <input type="text" name="2º apellido2" id="2º apellido2" maxlength="20"/>
+        </p>
+        <p>
+          Fecha de Nacimiento: 
+          <label for="Dia">Dia</label>:
+          <select name="Dia" id="Dia">
+            <option selected="selected">1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+          </select>
+          / 
+          <label for="Mes">Mes: </label>
+          <select name="Mes" id="Mes">
+            <option selected="selected">Enero</option>
+            <option>Febrero</option>
+            <option>Marzo</option>
+            <option>Abril</option>
+            <option>Mayo</option>
+            <option>Junio</option>
+            <option>Julio</option>
+            <option>Agosto</option>
+            <option>Septiembre</option>
+            <option>Octubre</option>
+            <option>Noviembre</option>
+            <option>Diciembre</option>
+          </select>
+          /  
+          <label for="Año">Año: </label>
+          <select name="Año" id="Año">
+            <option>1970</option>
+            <option>1971</option>
+            <option>1972</option>
+            <option>1973</option>
+            <option>1974</option>
+            <option>1975</option>
+            <option>1976</option>
+            <option>1977</option>
+            <option>1978</option>
+            <option>1979</option>
+            <option>1980</option>
+            <option>1981</option>
+            <option>1982</option>
+            <option>1983</option>
+            <option>1984</option>
+            <option>1985</option>
+            <option>1986</option>
+            <option>1987</option>
+            <option>1988</option>
+            <option>1989</option>
+            <option>1990</option>
+            <option>1991</option>
+            <option>1992</option>
+            <option>1993</option>
+            <option>1994</option>
+            <option>1995</option>
+            <option>1996</option>
+            <option>1997</option>
+            <option selected="selected">1998</option>
+          </select>
+          <BR/>
+          <p><label for="DNI"> DNI:</label>
+          <input type="text" name="DNI" id="DNI" maxlength="9" />
+        </p>
+        <p>
+          <label for="Direccion2">Dirección:</label>
+          <input type="text" name="Direccion2" id="Direccion2" maxlength="30"/>
+        </p>
+        <p>
+          <label for="Poblacion2">Población: </label>
+          <input type="text" name="Poblacion2" id="Poblacion2" maxlength="15"/>
+        </p>
+        <p>
+          <label for="Codigo postal2">Código postal: </label>
+          <input type="text" name="Codigo postal2" id="Codigo postal2" maxlength="5"/>
+        </p>
+        <p>
+          <label for="Provincia2">Provincia: </label>
+          <input type="text" name="Provincia2" id="Provincia2" maxlength="20"/>
+        </p>
+        <p>
+          <label for="Telefono Fijo2">Telefono Fijo: </label>
+          <input type="text" name="Telefono Fijo2" id="Telefono Fijo2" maxlength="9"/>
+          <label for="Telefono Movil2">Telefono Móvil: </label>
+          <input type="text" name="Telefono Movil2" id="Telefono Movil2" maxlength="9"/>
+          <label for="Correo electronico2">Correo electrónico: </label>
+          <input type="text" name="Correo electronico2" id="Correo electronico2" maxlength="30"/>
+        </p>
+        <br/>
+</fieldset>
+<br/>
+      <fieldset>
+        <legend><strong>Formación</strong></legend>
+        
+        <p>Estudios realizados:</p> 
+          <label>
+            <input type="radio" name="Formaci&oacute;n1" value="opción" id="Formacioacuten1_0" />
+            ESO</label>
+          <label>
+            <input name="Formaci&oacute;n1" type="radio" id="Formacioacuten1_1" value="opción" />
+            Bachillerato</label>
+          <label>
+            <input type="radio" name="Formaci&oacute;n1" value="opción" id="Formacioacuten1_2" />
+            Grado Medio</label>
+          <label>
+            <input type="radio" name="Formaci&oacute;n1" value="opción" id="Formacioacuten1_3" />
+            Grado Superior</label>
+          <label>
+            <input type="radio" name="Formaci&oacute;n1" value="opción" id="Formacioacuten1_4" />
+            Estudios Universitarios</label>
+        </p>
+        <p>
+          <label for="Rama">Rama: </label>
+          <input type="text" name="Rama" id="Rama" maxlength="30" />
+  </p>
+                <p>Más estudios realizados:</p> 
+          <label>
+            <input type="radio" name="Formaci&oacute;n1" value="opción" id="Formacioacuten1_0" />
+            ESO</label>
+          <label>
+            <input type="radio" name="Formaci&oacute;n1" value="opción" id="Formacioacuten1_1" />
+            Bachillerato</label>
+          <label>
+            <input type="radio" name="Formaci&oacute;n1" value="opción" id="Formacioacuten1_2" />
+            Grado Medio</label>
+          <label>
+            <input type="radio" name="Formaci&oacute;n1" value="opción" id="Formacioacuten1_3" />
+            Grado Superior</label>
+          <label>
+            <input type="radio" name="Formaci&oacute;n1" value="opción" id="Formacioacuten1_4" />
+            Estudios Universitarios</label>
+        </p>
+        <p>
+          <label for="Rama">Rama: </label>
+          <input type="text" name="Rama2" id="Rama" maxlength="30"/>
+        </p>
+      </fieldset><br/>
+      <fieldset>
+       <legend><strong>Experiencia laboral   
+       </strong></legend>
+       <p>
+         <label for="Subir curriculum">Subir curriculum: </label>
+         <input type="file" name="Subir curriculum" id="Subir curriculum" />
+       </p>
+       <p>
+         <label for="Comentario">Comentarios:<br />
+         </label>
+         <textarea name="Comentario" id="Comentario" cols="45" rows="5"></textarea>
+       </p>
+       </fieldset>
+       <input type="submit" value="Enviar Curriculum"/>
+       <input type="reset" value="Borrar curriculum"/>
+      </form>
+    <p>
+      
+    </p>
+   </td>
+  </tr>
+</table>
+
+  <div class="footer">
+No se admiten devoluciones y precios sin I.V.A.
+Telefono de contacto: 943 65 32 13
+Correo electronico: panaderiapandora@gmail.com
+</div>
+</body>
+</html>
