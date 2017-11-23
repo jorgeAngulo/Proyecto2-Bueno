@@ -1,0 +1,18 @@
+create database pandora;
+use pandora;
+
+create table registrados
+(
+Nombre varchar (20),
+Apellido varchar (20),
+Poblacion varchar (20),
+CodigoPostal varchar (10),
+Provincia varchar (20),
+Telefono varchar (9),
+CorreoElectronico varchar (30)
+);
+
+insert into registrados values('Jorge', 'Angulo', 'Berriz', '48240', 'Bizkaia', '684523138', 'pandora@gmail.com' );
+insert into registrados values('Pablo', 'Gutierrez', 'Eibar', '20600', 'Guipuzkoa', '685123485', 'pablogutierrez@hotmail.com');
+
+
